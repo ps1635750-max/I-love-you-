@@ -1,53 +1,126 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Our Anniversary</title>
+<title>Our Love Story</title>
 <style>
-body {
-  margin:0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(#ffe6f2, #ffffff);
-  text-align:center;
-}
-.container { padding:20px; }
-.message {
-  font-size:20px;
-  color:#d63384;
-  max-width:600px;
-  margin:20px auto;
-  background:white;
-  padding:20px;
-  border-radius:15px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-.slideshow img {
-  width:300px;
-  height:auto;
-  border-radius:15px;
-  box-shadow:0 0 15px rgba(0,0,0,0.2);
-  animation: fade 3s infinite;
-}
-@keyframes fade {
-  0% {opacity:0;}
-  50% {opacity:1;}
-  100% {opacity:0;}
-}
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to bottom, #ffe6f2, #ffffff);
+        overflow-x: hidden;
+    }
+    h1, h2, p {
+        text-align: center;
+        color: #d63384;
+        padding: 10px 20px;
+        animation: fadeIn 2s ease-in-out;
+    }
+    .section {
+        padding: 40px 20px;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1.5s forwards;
+    }
+    @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; } to { opacity: 1; }
+    }
+    .photo {
+        width: 80%;
+        max-width: 350px;
+        display: block;
+        margin: 20px auto;
+        border-radius: 20px;
+        box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+        animation: fadeIn 2.5s ease-in-out;
+    }
+    .hearts {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    .heart {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: pink;
+        transform: rotate(45deg);
+        animation: float 6s infinite ease-in;
+    }
+    .heart:before, .heart:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: pink;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .heart:before { top: -10px; left: 0; }
+    .heart:after { left: -10px; top: 0; }
+    @keyframes float {
+        0% { opacity: 0; transform: translateY(0) rotate(45deg); }
+        50% { opacity: 1; }
+        100% { transform: translateY(-800px) rotate(45deg); opacity: 0; }
+    }
 </style>
 </head>
 <body>
-<br><h1 style="color:#ff4da6;">Happy Anniversary My Love ❤️</h1>
 
-<div class="message">
-I can’t believe it! It’s literally like a dream! WE HAVE COMPLETED 1 YEAR TOGETHERRRR! Can you believe it?! OMG!😭🤍<br><br>
-You are the best thing that has happened to me! You will forever be my special one! You will always be my lover, you have always been my lover be it my past life, present life or even the coming lives! You and I are lovers forever in each and every universe every multiverse! I thank god daily that he sent someone so divine in my life and made my life so so so muchhh betterrrr!!!❤️<br><br>
-I LOVE YOU SO MUCH!
+<div class="hearts">
+    <!-- Auto-generate hearts -->
+    <div class="heart" style="left:0%; animation-delay:0.0s;"></div>
+<div class="heart" style="left:5%; animation-delay:0.5s;"></div>
+<div class="heart" style="left:10%; animation-delay:1.0s;"></div>
+<div class="heart" style="left:15%; animation-delay:1.5s;"></div>
+<div class="heart" style="left:20%; animation-delay:2.0s;"></div>
+<div class="heart" style="left:25%; animation-delay:2.5s;"></div>
+<div class="heart" style="left:30%; animation-delay:3.0s;"></div>
+<div class="heart" style="left:35%; animation-delay:3.5s;"></div>
+<div class="heart" style="left:40%; animation-delay:4.0s;"></div>
+<div class="heart" style="left:45%; animation-delay:4.5s;"></div>
+<div class="heart" style="left:50%; animation-delay:5.0s;"></div>
+<div class="heart" style="left:55%; animation-delay:5.5s;"></div>
+<div class="heart" style="left:60%; animation-delay:6.0s;"></div>
+<div class="heart" style="left:65%; animation-delay:6.5s;"></div>
+<div class="heart" style="left:70%; animation-delay:7.0s;"></div>
+<div class="heart" style="left:75%; animation-delay:7.5s;"></div>
+<div class="heart" style="left:80%; animation-delay:8.0s;"></div>
+<div class="heart" style="left:85%; animation-delay:8.5s;"></div>
+<div class="heart" style="left:90%; animation-delay:9.0s;"></div>
+<div class="heart" style="left:95%; animation-delay:9.5s;"></div>
 </div>
 
-<div class="slideshow">
-<img src="photo1.jpeg">
-<img src="photo2.jpeg">
+<h1>Happy Anniversary My Love 🤍✨</h1>
+
+<div class="section">
+    <p>I can’t believe it! It’s literally like a dream! WE HAVE COMPLETED 1 YEAR TOGETHERRRR! OMG!😭🤍</p>
+    <p>You are the best thing that has happened to me! You will forever be my special one! You will always be my lover—past life, present life and every life after this. Every universe, every multiverse… it's always you and me. ❤️</p>
+</div>
+
+<img class="photo" src="photo1.jpeg">
+
+<div class="section">
+    <h2>More Words From My Heart…</h2>
+    <p>With you, even the simplest moments feel magical.</p>
+    <p>Your smile is my favourite view, your voice is my favourite sound, and your presence is my favourite feeling.</p>
+    <p>Thank you for choosing me every single day. Thank you for loving me the way no one else ever could.</p>
+    <p>You are my peace, my happiness, my forever home. 🤍</p>
+</div>
+
+<img class="photo" src="photo2.jpeg">
+
+<div class="section">
+    <h2>Forever Yours</h2>
+    <p>No matter where life takes us, one thing will never change — I will love you endlessly, softly, deeply, forever.</p>
+    <p>You are my today, my tomorrow, and my always. 💗</p>
 </div>
 
 </body>
